@@ -1,11 +1,13 @@
 # Symfony5 - Cauldron overflow
 
-### Install symfony cli
+## To start a project
+
+### 1. Install symfony cli
 ``
 wget https://get.symfony.com/cli/installer -O - | bash
 ``  
 
-### Start a web server  
+### 2. Start a web server  
 ``
 symfony serve -d
 ``  
@@ -14,8 +16,17 @@ or
 php -S 127.0.0.1:8000 -t public/
 ``
 
+### 3. Install node dependencies with yarn for webpack encore
+``
+yarn install
+``  
+#### Run Encore
+``
+yarn watch
+``
 
-### Listing All Services
+
+## Listing All Services
 ``
 php bin/console debug:autowiring
 ``
