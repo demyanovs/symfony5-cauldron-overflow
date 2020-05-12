@@ -5,7 +5,7 @@
 wget https://get.symfony.com/cli/installer -O - | bash
 ``  
 
-### To start a web server  
+### Start a web server  
 ``
 symfony serve -d
 ``  
