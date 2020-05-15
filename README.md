@@ -26,9 +26,13 @@ yarn watch
 ``
 
 
-## Listing All Services
+## Useful commands  
 ``
 php bin/console debug:autowiring
+``  
+Clear all caches  
+``
+php bin/console cache:clear
 ``
 
 Based on symfonycasts tutorials:  
