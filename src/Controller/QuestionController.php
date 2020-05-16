@@ -23,7 +23,7 @@ class QuestionController extends AbstractController
     public function show($slug, MarkdownHelper $markdownHelper, HubInterface $sentryHub)
     {
 
-        throw new \Exception('bad stuff happened!');
+        //throw new \Exception('bad stuff happened!');
 
         $answers = [
             'answer 1',
