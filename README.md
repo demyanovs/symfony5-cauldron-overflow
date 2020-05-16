@@ -42,5 +42,20 @@ php bin/console debug:container
 php bin/console debug:container --parameters
 ````
 
-Based on symfonycasts tutorials:  
+````
+./bin/console about
+````
+
+Creating the Vault  
+````
+php bin/console secrets:set SENTRY_DSN
+````
+
+Creating the prod Vault
+````
+php bin/console secrets:set SENTRY_DSN --env=prod
+````
+
+## Based on symfonycasts tutorials  
 1. <a href="https://symfonycasts.com/screencast/symfony">Charming Development in Symfony 5</a>
+2. <a href="https://symfonycasts.com/screencast/symfony-fundamentals">Symfony 5 Fundamentals: Services, Config & Environments</a>
