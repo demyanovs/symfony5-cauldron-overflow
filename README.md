@@ -35,6 +35,11 @@ Create command
 php bin/console make:command
 ````
 
+Making the Twig Extension
+````
+php bin/console make:twig-extension
+````
+
 ## Useful commands  
 ````
 php bin/console debug:autowiring
