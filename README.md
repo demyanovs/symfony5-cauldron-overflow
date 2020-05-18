@@ -25,6 +25,16 @@ yarn install
 yarn watch
 ````
 
+## MakerBundle
+````
+php bin/console make:
+````
+
+Create command
+````
+php bin/console make:command
+````
+
 ## Useful commands  
 ````
 php bin/console debug:autowiring
@@ -44,7 +54,7 @@ php bin/console debug:container --parameters
 
 ````
 ./bin/console about
-````
+````  
 
 Creating the Vault  
 ````
@@ -54,6 +64,23 @@ php bin/console secrets:set SENTRY_DSN
 Creating the prod Vault
 ````
 php bin/console secrets:set SENTRY_DSN --env=prod
+````
+
+Listing the Secrets
+````
+php bin/console secrets:list
+````
+
+````
+php bin/console secrets:list --reveal
+````
+
+````
+php bin/console secrets:list --env=prod
+````
+
+````
+php bin/console secrets:list --env=prod --reveal
 ````
 
 ## Based on symfonycasts tutorials  
