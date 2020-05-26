@@ -42,6 +42,9 @@ php bin/console make:twig-extension
 
 ## Useful commands  
 ````
+symfony new project_name
+````  
+````
 php bin/console debug:autowiring
 ````  
 Clear all caches  
