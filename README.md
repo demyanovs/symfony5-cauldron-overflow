@@ -91,6 +91,11 @@ php bin/console secrets:list --env=prod
 php bin/console secrets:list --env=prod --reveal
 ````
 
+## DB
+````
+make:docker:database
+````
+
 ## Based on symfonycasts tutorials  
 1. <a href="https://symfonycasts.com/screencast/symfony">Charming Development in Symfony 5</a>
 2. <a href="https://symfonycasts.com/screencast/symfony-fundamentals">Symfony 5 Fundamentals: Services, Config & Environments</a>
