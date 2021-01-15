@@ -91,9 +91,38 @@ php bin/console secrets:list --env=prod
 php bin/console secrets:list --env=prod --reveal
 ````
 
+Environment variables
+````
+symfony var:export --multiline
+````
+
 ## DB
 ````
 make:docker:database
+````
+
+````
+docker-compose up -d
+````
+
+````
+mysql -u root --password=password --host=127.0.0.1 --port=32773
+````
+
+````
+docker-compose exec database mysql -u root --password=password
+````
+
+````
+php bin/console make:entity
+````
+
+````
+php bin/console make:migration
+````
+
+````
+symfony console doctrine:migrations:migrate
 ````
 
 ## Based on symfonycasts tutorials  
