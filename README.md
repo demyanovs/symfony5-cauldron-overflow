@@ -30,6 +30,16 @@ yarn watch
 docker-compose up -d
 ````
 
+### 5. Apply migrations
+````
+symfony console doctrine:migrations:migrate
+````
+
+### 6. Load fixtures
+````
+symfony console doctrine:fixtures:load
+````
+
 ## MakerBundle
 ````
 php bin/console make:
@@ -101,6 +111,16 @@ Environment variables
 symfony var:export --multiline
 ````
 
+Load fixtures
+````
+symfony console doctrine:fixtures:load
+````
+
+Fixtures factory
+````
+symfony console make:factory
+````
+
 ## DB
 ````
 make:docker:database
@@ -134,6 +154,17 @@ symfony console doctrine:migrations:migrate
 symfony console doctrine:query:sql 'SELECT * FROM question'
 ````
 
+Drop db
+````
+symfony console doctrine:database:drop --force
+````
+
+Recreate db
+````
+symfony console doctrine:database:create
+````
+
 ## Based on symfonycasts tutorials  
 1. <a href="https://symfonycasts.com/screencast/symfony">Charming Development in Symfony 5</a>
 2. <a href="https://symfonycasts.com/screencast/symfony-fundamentals">Symfony 5 Fundamentals: Services, Config & Environments</a>
+3. <a href="https://symfonycasts.com/screencast/symfony-doctrine">Doctrine, Symfony & the Database</a>
