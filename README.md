@@ -25,6 +25,11 @@ yarn install
 yarn watch
 ````
 
+### 4. Start Mysql
+````
+docker-compose up -d
+````
+
 ## MakerBundle
 ````
 php bin/console make:
@@ -123,6 +128,10 @@ php bin/console make:migration
 
 ````
 symfony console doctrine:migrations:migrate
+````
+
+````
+symfony console doctrine:query:sql 'SELECT * FROM question'
 ````
 
 ## Based on symfonycasts tutorials  
