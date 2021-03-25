@@ -35,6 +35,11 @@ docker-compose up -d
 symfony console doctrine:migrations:migrate
 ````
 
+migration down
+````
+php app/console doctrine:migrations:execute YYYYMMDDHHMMSS --down
+````
+
 ### 6. Load fixtures
 ````
 symfony console doctrine:fixtures:load
